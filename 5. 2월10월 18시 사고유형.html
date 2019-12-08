@@ -439,7 +439,7 @@ G     9     0
 */
 var margin = {left: 20, top: 10, right: 10, bottom: 20};
 var series = ["횡단중","기타","측면충돌","추돌","진행중 추돌","차도통행중","정면충돌","측면직각충돌","길가장자리구역 통행중","도로이탈추락","공작물충돌","전도전복","도로이탈 기타","주정차중 추돌"];
-d3.csv("https://15011066.iptime.org:5000/4",function(dataset){
+d3.csv("./datafile/2월_10월_18시_사고유형 집계.csv",function(dataset){
 
 	var svg = d3.select("svg");
 	var width  = parseInt(svg.style("width"), 10) - margin.left - margin.right;

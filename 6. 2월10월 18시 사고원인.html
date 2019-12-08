@@ -422,7 +422,7 @@ var svg = d3.select("#my_dataviz")
           "translate(" + margin.left + "," + margin.top + ")");
 
 // Parse the Data
-d3.csv("https://15011066.iptime.org:5000/5", function(data) {
+d3.csv("./datafile/2월_10월_18시_횡단중_사고횟수_ 집계.csv", function(data) {
 
   // List of subgroups = header of the csv files = soil condition here
   var subgroups = data.columns.slice(1)
