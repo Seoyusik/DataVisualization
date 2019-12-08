@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.intro{
+  width:100%;
+  height:30px;
+}
+.intro h1{
+  font-family:'Oswald', sans-serif;
+  letter-spacing:2px;
+  font-weight:normal;
+  font-size:14px;
+  color:#222;
+  text-align:center;
+  margin-top:10px;
+}
+.intro a{
+  color:#e74c3c;
+  font-weight:bold;
+  letter-spacing:0;
+}
+.intro img{
+  width:20px;
+  heght:20px;
+  margin-left:5px;
+  margin-right:5px;
+  position:relative;
+  top:5px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+#container{
+  width:715px;
+  height:230px;
+}
+.button-1{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 0;
+}
+.button-1 a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-1{
+  width:140px;
+  height:50px;
+  top:-2px;
+  right:-140px;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button-1:hover .eff-1{
+  right:0;
+}
+.button-1:hover a{
+  color:#fff;
+}
+
+.button-2{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 50px;
+}
+.button-2 a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-2{
+  width:140px;
+  height:50px;
+  top:-50px;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button-2:hover .eff-2{
+  top:0;
+}
+.button-2:hover a{
+  color:#fff;
+}
+
+.button-3{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 50px;
+}
+.button-3 a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-3{
+  width:140px;
+  height:50px;
+  bottom:-50px;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button-3:hover .eff-3{
+  bottom:0;
+}
+.button-3:hover a{
+  color:#fff;
+}
+
+.button-4{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 50px;
+}
+.button-4 a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-4{
+  width:140px;
+  height:50px;
+  left:-140px;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button-4:hover .eff-4{
+  left:0;
+}
+.button-4:hover a{
+  color:#fff;
+}
+
+.button-5{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 0;
+}
+.button-5 a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-5{
+  width:140px;
+  height:50px;
+  left:-140px;
+  top:-50px;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button-5:hover .eff-5{
+  left:0;top:0;
+}
+.button-5:hover a{
+  color:#fff;
+}
+.button-6{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 50px;
+}
+.button-6 a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-6{
+  width:140px;
+  height:50px;
+  right:-140px;
+  bottom:-50px;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button-6:hover .eff-6{
+  right:0;bottom:0;
+}
+.button-6:hover a{
+  color:#fff;
+}
+
+.button-7{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 50px;
+}
+.button-7 a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-7{
+  width:140px;
+  height:50px;
+  border:0px solid #34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+  box-sizing:border-box;
+}
+.button-7:hover .eff-7{
+  border:70px solid #34495e;
+}
+.button-7:hover a{
+  color:#fff;
+}
+
+.button-8{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 50px;
+}
+.button-8 a{
+  font-family:arial;
+  font-size:16px;
+  color:#fff;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-8{
+  width:140px;
+  height:50px;
+  border:70px solid #34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+  box-sizing:border-box;
+}
+.button-8:hover .eff-8{
+  border:0px solid #34495e;
+}
+.button-8:hover a{
+  color:#34495e;
+}
+
+
+footer{
+  position:absolute;
+  width:100%;
+  height:30px;
+  border-top:1px solid #34495e;
+  bottom:0;
+  display:none;
+}
+footer h1{
+  font-family: 'Oswald', sans-serif;
+  font-weight:normal;
+  font-size:14px;
+  color:#34495e;
+  text-align:left;
+  margin-left:5%;
+}
+footer a{
+  font-family: 'Oswald', sans-serif;
+  font-weight:normal;
+  font-size:14px;
+  color:#34495e;
+}
+</style>
+<!-- Load d3.js -->
+<div id="container">
+  <h1>10월 교통사고 증가 원인 & 유형 분석 </h1>
+  <div class="button-1">
+    <div class="eff-1"></div>
+    <a href="1. 연간 월별 사망사고 건수 히트맵.html"> 교통사고 히트맵 </a>
+  </div>
+  <div class="button-4">
+    <div class="eff-4"></div>
+    <a href="2. 연간 월별 사망사고 건수.html"> 연간 교통사고 </a>
+  </div>
+  <div class="button-2">
+    <div class="eff-2"></div>
+    <a href="3. 월별 사망사고 4년간 합계.html"> 사망사고 합계 </a>
+  </div>
+  <div class="button-3">
+    <div class="eff-3"></div>
+    <a href="4. 2월10월 시간별 사망사고횟수 그룹.html"> 시간별 사망사고 </a>
+  </div>
+  <div class="button-5">
+    <div class="eff-5"></div>
+    <a href="5. 2월10월 18시 사고유형.html"> 18시 사고유형 </a>
+  </div>
+  <div class="button-6">
+    <div class="eff-6"></div>
+    <a href="6. 2월10월 18시 사고원인.html"> 18시 사고원인 </a>
+  </div>
+
+</div>
+<h1>
+  월별 사망사고 집계
+</h1>
+<style>
+.grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0.7;
+}
+.lineChart {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+.lineChart:hover {
+    stroke: black;
+    stroke-width: 3px;
+}
+.toolTip {
+    position: absolute;
+    border: 1px solid;
+    border-radius: 4px 4px 4px 4px;
+    background: rgba(0, 0, 0, 0.8);
+    color : white;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    min-width: 30px;
+}
+</style>
+
+<svg width="1200" height="800"></svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+    var series = ["2015년","2016년","2017년", "2018년"];
+    d3.csv("http://15011066.iptime.org:5000/1", function(data1){
+      console.log(data1);
+
+      var dataset = []
+
+      dataset.push({
+          1:data1[0]["count"],
+          2:data1[1]["count"],
+          3:data1[2]["count"],
+          4:data1[3]["count"],
+          5:data1[4]["count"],
+          6:data1[5]["count"],
+          7:data1[6]["count"],
+          8:data1[7]["count"],
+          9:data1[8]["count"],
+          10:data1[9]["count"],
+          11:data1[10]["count"],
+          12:data1[11]["count"]
+        });
+
+        dataset.push({
+            1:data1[12]["count"],
+            2:data1[13]["count"],
+            3:data1[14]["count"],
+            4:data1[15]["count"],
+            5:data1[16]["count"],
+            6:data1[17]["count"],
+            7:data1[18]["count"],
+            8:data1[19]["count"],
+            9:data1[20]["count"],
+            10:data1[21]["count"],
+            11:data1[22]["count"],
+            12:data1[23]["count"]
+          });
+
+          dataset.push({
+              1:data1[24]["count"],
+              2:data1[25]["count"],
+              3:data1[26]["count"],
+              4:data1[27]["count"],
+              5:data1[28]["count"],
+              6:data1[29]["count"],
+              7:data1[30]["count"],
+              8:data1[31]["count"],
+              9:data1[32]["count"],
+              10:data1[33]["count"],
+              11:data1[34]["count"],
+              12:data1[35]["count"]
+            });
+
+            dataset.push({
+                1:data1[36]["count"],
+                2:data1[37]["count"],
+                3:data1[38]["count"],
+                4:data1[39]["count"],
+                5:data1[40]["count"],
+                6:data1[41]["count"],
+                7:data1[42]["count"],
+                8:data1[43]["count"],
+                9:data1[44]["count"],
+                10:data1[45]["count"],
+                11:data1[46]["count"],
+                12:data1[47]["count"]
+              });
+
+
+
+      console.log(dataset);
+
+      var keys = d3.keys(dataset[0]);
+      var data = [];
+
+      console.log(keys);
+
+
+      dataset.forEach(function(d, i) {
+        data[i] = keys.map(function(key) { return {x: key, y: d[key]}; })
+      });
+
+      var margin = {left: 20, top: 10, right: 10, bottom: 20};
+      var svg = d3.select("svg");
+      var width  = parseInt(svg.style("width"), 10) - margin.left - margin.right;
+      var height = parseInt(svg.style("height"), 10)- margin.top  - margin.bottom;
+      var svgG = svg.append("g")
+          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+      var xScale = d3.scalePoint()//scaleBand() scaleOrdinal
+          .domain(keys)
+          .rangeRound([0, width]);
+      var yScale = d3.scaleLinear()
+          .domain([0, d3.max(dataset, function(d) { return d3.max(keys, function(key) { return d[key];});})])
+          .nice()
+          .range([height, 0]);
+      var colors = d3.scaleOrdinal(d3.schemeCategory10);
+
+      svgG.append("g")
+          .attr("class", "grid")
+          .attr("transform", "translate(0," + height + ")")
+          .call(d3.axisBottom(xScale)
+              .tickSize(-height)
+          );
+
+      svgG.append("g")
+          .attr("class", "grid")
+          .call(d3.axisLeft(yScale)
+              .ticks(5)
+              .tickSize(-width)
+             );
+
+      var line = d3.line()
+          //.curve(d3.curveBasis)
+          .x(function(d) { return xScale(d.x); })
+          .y(function(d) { return yScale(d.y); });
+      var lineG = svgG.append("g")
+          .selectAll("g")
+          .data(data)
+             .enter().append("g");
+
+      lineG.append("path")
+          .attr("class", "lineChart")
+          .style("stroke", function(d, i) { return colors( series[i]); })
+          .attr("d", function(d, i) {return line(d); });
+
+      lineG.selectAll("dot")
+          .data(function(d) {return d })
+          .enter().append("circle")
+              .attr("r", 3)
+              .attr("cx", function(d) { return xScale(d.x) })
+              .attr("cy", function(d) { return yScale(d.y);})
+              .on("mouseover", function() { tooltip.style("display", null); })
+              .on("mouseout",  function() { tooltip.style("display", "none"); })
+              .on("mousemove", function(d) {
+                  tooltip.style("left", (d3.event.pageX+10)+"px");
+                  tooltip.style("top",  (d3.event.pageY-10)+"px");
+                  tooltip.html("month. " + d.x + "<br/>" + "data value : " + d.y);
+              });
+
+      var tooltip = d3.select("body")
+          .append("div")
+          .attr("class", "toolTip")
+          .style("display", "none");
+
+      var legend = svgG.append("g")
+          .attr("text-anchor", "end")
+          .selectAll("g")
+          .data(series)
+          .enter().append("g")
+          .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+      legend.append("rect")
+            .attr("x", width - 20)
+            .attr("width", 19)
+            .attr("height", 19)
+            .attr("fill", colors)
+            .attr("y", 9.5);;
+
+        legend.append("text")
+            .attr("x", width - 30)
+            .attr("y", 20)
+            .attr("dy", "0.32em")
+            .text(function(d) { return d; });
+
+        svg.append("text")
+            .attr("x", 1170)
+            .attr("y", 770)
+            .attr("font-family", "sans-serif")
+            .style("font-size", "15px")
+            .text("(월)");
+
+            svg.append("text")
+                .attr("x", 25)
+                .attr("y", 10)
+                .attr("font-family", "sans-serif")
+                .style("font-size", "13px")
+                .text("(사고횟수)");
+
+
+    });//d3.csv
+
+</script>

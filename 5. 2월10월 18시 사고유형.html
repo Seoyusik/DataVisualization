@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.intro{
+  width:100%;
+  height:30px;
+}
+.intro h1{
+  font-family:'Oswald', sans-serif;
+  letter-spacing:2px;
+  font-weight:normal;
+  font-size:14px;
+  color:#222;
+  text-align:center;
+  margin-top:10px;
+}
+.intro a{
+  color:#e74c3c;
+  font-weight:bold;
+  letter-spacing:0;
+}
+.intro img{
+  width:20px;
+  heght:20px;
+  margin-left:5px;
+  margin-right:5px;
+  position:relative;
+  top:5px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+#container{
+  width:715px;
+  height:230px;
+}
+.button-1{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 0;
+}
+.button-1 a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-1{
+  width:140px;
+  height:50px;
+  top:-2px;
+  right:-140px;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button-1:hover .eff-1{
+  right:0;
+}
+.button-1:hover a{
+  color:#fff;
+}
+
+.button-2{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 50px;
+}
+.button-2 a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-2{
+  width:140px;
+  height:50px;
+  top:-50px;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button-2:hover .eff-2{
+  top:0;
+}
+.button-2:hover a{
+  color:#fff;
+}
+
+.button-3{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 50px;
+}
+.button-3 a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-3{
+  width:140px;
+  height:50px;
+  bottom:-50px;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button-3:hover .eff-3{
+  bottom:0;
+}
+.button-3:hover a{
+  color:#fff;
+}
+
+.button-4{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 50px;
+}
+.button-4 a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-4{
+  width:140px;
+  height:50px;
+  left:-140px;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button-4:hover .eff-4{
+  left:0;
+}
+.button-4:hover a{
+  color:#fff;
+}
+
+.button-5{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 0;
+}
+.button-5 a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-5{
+  width:140px;
+  height:50px;
+  left:-140px;
+  top:-50px;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button-5:hover .eff-5{
+  left:0;top:0;
+}
+.button-5:hover a{
+  color:#fff;
+}
+.button-6{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 50px;
+}
+.button-6 a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-6{
+  width:140px;
+  height:50px;
+  right:-140px;
+  bottom:-50px;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button-6:hover .eff-6{
+  right:0;bottom:0;
+}
+.button-6:hover a{
+  color:#fff;
+}
+
+.button-7{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 50px;
+}
+.button-7 a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-7{
+  width:140px;
+  height:50px;
+  border:0px solid #34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+  box-sizing:border-box;
+}
+.button-7:hover .eff-7{
+  border:70px solid #34495e;
+}
+.button-7:hover a{
+  color:#fff;
+}
+
+.button-8{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 50px;
+}
+.button-8 a{
+  font-family:arial;
+  font-size:16px;
+  color:#fff;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-8{
+  width:140px;
+  height:50px;
+  border:70px solid #34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+  box-sizing:border-box;
+}
+.button-8:hover .eff-8{
+  border:0px solid #34495e;
+}
+.button-8:hover a{
+  color:#34495e;
+}
+
+
+footer{
+  position:absolute;
+  width:100%;
+  height:30px;
+  border-top:1px solid #34495e;
+  bottom:0;
+  display:none;
+}
+footer h1{
+  font-family: 'Oswald', sans-serif;
+  font-weight:normal;
+  font-size:14px;
+  color:#34495e;
+  text-align:left;
+  margin-left:5%;
+}
+footer a{
+  font-family: 'Oswald', sans-serif;
+  font-weight:normal;
+  font-size:14px;
+  color:#34495e;
+}
+</style>
+<!-- Load d3.js -->
+<div id="container">
+  <h1>10월 교통사고 증가 원인 & 유형 분석 </h1>
+  <div class="button-1">
+    <div class="eff-1"></div>
+    <a href="1. 연간 월별 사망사고 건수 히트맵.html"> 교통사고 히트맵 </a>
+  </div>
+  <div class="button-4">
+    <div class="eff-4"></div>
+    <a href="2. 연간 월별 사망사고 건수.html"> 연간 교통사고 </a>
+  </div>
+  <div class="button-2">
+    <div class="eff-2"></div>
+    <a href="3. 월별 사망사고 4년간 합계.html"> 사망사고 합계 </a>
+  </div>
+  <div class="button-3">
+    <div class="eff-3"></div>
+    <a href="4. 2월10월 시간별 사망사고횟수 그룹.html"> 시간별 사망사고 </a>
+  </div>
+  <div class="button-5">
+    <div class="eff-5"></div>
+    <a href="5. 2월10월 18시 사고유형.html"> 18시 사고유형 </a>
+  </div>
+  <div class="button-6">
+    <div class="eff-6"></div>
+    <a href="6. 2월10월 18시 사고원인.html"> 18시 사고원인 </a>
+  </div>
+
+</div>
+<style>
+.bar {
+    _fill: skyblue;
+}
+.bar:hover {
+    fill: skyblue;
+}
+.text {
+    fill: white;
+    font-weight:bold;
+    font-size: 11px;
+}
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+.toolTip {
+    position: absolute;
+    border: 0 none;
+    border-radius: 4px 4px 4px 4px;
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 11px;
+}
+</style>
+<h1>
+  2월,10월 18시 사고유형별 사망사고 건수
+</h1>
+<svg width="1600" height="800"></svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+// change series I
+/*
+    2016   2017
+A     9    17
+B    19    27
+C    29    37
+D    39    27
+E    29    17
+F    19     7
+G     9     0
+*/
+var margin = {left: 20, top: 10, right: 10, bottom: 20};
+var series = ["횡단중","기타","측면충돌","추돌","진행중 추돌","차도통행중","정면충돌","측면직각충돌","길가장자리구역 통행중","도로이탈추락","공작물충돌","전도전복","도로이탈 기타","주정차중 추돌"];
+d3.csv("http://15011066.iptime.org:5000/4",function(dataset){
+
+	var svg = d3.select("svg");
+	var width  = parseInt(svg.style("width"), 10) - margin.left - margin.right;
+	var height = parseInt(svg.style("height"), 10)- margin.top  - margin.bottom;
+	var svgG = svg.append("g")
+	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+	var xScale0 = d3.scaleBand()
+	    .domain(series.map(function(d) { return d;} ))
+	    .rangeRound([0, width]).padding(0.2);
+
+	var keys = d3.keys(dataset[0]);
+
+	var xScale1 = d3.scaleBand()
+	    .domain(keys)
+	    .rangeRound([0, xScale0.bandwidth()]).padding(0.2);
+	var yScale = d3.scaleLinear()
+	    .domain([0, 6+d3.max(dataset, function(d) { return d3.max(keys, function(key) { return d[key]; }); })]).nice()
+	    .range([height, 0]);
+	var colors = d3.scaleOrdinal(d3.schemeCategory10);
+
+	svgG.append("g")
+	    .attr("class", "grid")
+	    .attr("transform", "translate(0," + height + ")")
+		.style("font-size","12px")
+	    .call(d3.axisBottom(xScale0)
+	        .tickSize(-height)
+	    );
+
+	svgG.append("g")
+	    .attr("class", "grid")
+		.style("font-size","12px")
+	    .call(d3.axisLeft(yScale)
+	        .ticks(5)
+	        .tickSize(-width)
+	    );
+
+	var barG = svgG.append("g")
+	    .selectAll("g")
+	    .data(dataset)
+	    .enter().append("g")
+	      .attr("transform", function(d, i) { return "translate(" + xScale0(series[i]) + ",0)"; });
+
+	barG.selectAll("rect")
+	    .data(function(d) { return keys.map(function(key) { return {key: key, value: d[key]}; }); })
+	    .enter().append("rect")
+	        .attr("class", "bar")
+	        .attr("height", function(d) { return height - yScale(d.value); })
+	        .attr("width", xScale1.bandwidth())
+	        .attr("x", function(d) {return xScale1(d.key); })
+	        .attr("y", function(d) { return yScale(d.value); })
+	        .attr("fill",   function(d) { return colors(d.key); })
+	        .on("mouseover", function() { tooltip.style("display", null); })
+	        .on("mouseout",  function() { tooltip.style("display", "none"); })
+	        .on("mousemove", function(d) {
+	            tooltip.style("left", (d3.event.pageX+10)+"px");
+	            tooltip.style("top",  (d3.event.pageY-10)+"px");
+	            tooltip.html(d.key + "<br/>" + d.value);
+	        });
+	barG.selectAll("text")
+	    .data(function(d) { return keys.map(function(key) { return {key: key, value: d[key]}; }); })
+	    .enter().append("text")
+	    .text(function(d) {return d.value})
+	        .attr("class", "text")
+	        .attr("x", function(d, i) {return xScale1(d.key)+xScale1.bandwidth()/2})
+	        .style("text-anchor", "middle")
+	        .attr("y", function(d, i) {return yScale(d.value) + 15});
+
+
+
+	var tooltip = d3.select("body").append("div").attr("class", "toolTip").style("display", "none");
+	var legend = svgG.append("g")
+	    .attr("text-anchor", "end")
+	    .selectAll("g")
+	    .data(keys)
+	    .enter().append("g")
+	    .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+	  legend.append("rect")
+	      .attr("x", width - 20)
+	      .attr("width", 19)
+	      .attr("height", 19)
+	      .attr("fill", colors);
+	  legend.append("text")
+	      .attr("x", width - 30)
+	      .attr("y", 9.5)
+	      .attr("dy", "0.32em")
+	      .text(function(d) { return d; });
+
+    svg.append("text")
+      .attr("x", 20)
+      .attr("y", 23)
+ 	  .attr("font-family", "sans-serif")
+      .style("font-size", "15px")
+      .text("(사고횟수)");
+
+
+})//d3.csv
+
+</script>
