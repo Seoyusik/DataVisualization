@@ -43,12 +43,394 @@
         }
     </style>
   </head>
+  <style>
+
+.intro{
+  width:100%;
+  height:30px;
+}
+.intro h1{
+  font-family:'Oswald', sans-serif;
+  letter-spacing:2px;
+  font-weight:normal;
+  font-size:14px;
+  color:#222;
+  text-align:center;
+  margin-top:10px;
+}
+.intro a{
+  color:#e74c3c;
+  font-weight:bold;
+  letter-spacing:0;
+}
+.intro img{
+  width:20px;
+  heght:20px;
+  margin-left:5px;
+  margin-right:5px;
+  position:relative;
+  top:5px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+#container{
+  width:550px;
+  height:150px;
+}
+.button-1{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 0;
+}
+.button-1 a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-1{
+  width:140px;
+  height:50px;
+  top:-2px;
+  right:-140px;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button-1:hover .eff-1{
+  right:0;
+}
+.button-1:hover a{
+  color:#fff;
+}
+
+.button-2{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 50px;
+}
+.button-2 a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-2{
+  width:140px;
+  height:50px;
+  top:-50px;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button-2:hover .eff-2{
+  top:0;
+}
+.button-2:hover a{
+  color:#fff;
+}
+
+.button-3{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 50px;
+}
+.button-3 a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-3{
+  width:140px;
+  height:50px;
+  bottom:-50px;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button-3:hover .eff-3{
+  bottom:0;
+}
+.button-3:hover a{
+  color:#fff;
+}
+
+.button-4{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 50px;
+}
+.button-4 a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-4{
+  width:140px;
+  height:50px;
+  left:-140px;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button-4:hover .eff-4{
+  left:0;
+}
+.button-4:hover a{
+  color:#fff;
+}
+
+.button-5{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 0;
+}
+.button-5 a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-5{
+  width:140px;
+  height:50px;
+  left:-140px;
+  top:-50px;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button-5:hover .eff-5{
+  left:0;top:0;
+}
+.button-5:hover a{
+  color:#fff;
+}
+.button-6{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 50px;
+}
+.button-6 a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-6{
+  width:140px;
+  height:50px;
+  right:-140px;
+  bottom:-50px;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button-6:hover .eff-6{
+  right:0;bottom:0;
+}
+.button-6:hover a{
+  color:#fff;
+}
+
+.button-7{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 50px;
+}
+.button-7 a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-7{
+  width:140px;
+  height:50px;
+  border:0px solid #34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+  box-sizing:border-box;
+}
+.button-7:hover .eff-7{
+  border:70px solid #34495e;
+}
+.button-7:hover a{
+  color:#fff;
+}
+
+.button-8{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 50px;
+}
+.button-8 a{
+  font-family:arial;
+  font-size:16px;
+  color:#fff;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-8{
+  width:140px;
+  height:50px;
+  border:70px solid #34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+  box-sizing:border-box;
+}
+.button-8:hover .eff-8{
+  border:0px solid #34495e;
+}
+.button-8:hover a{
+  color:#34495e;
+}
+
+
+footer{
+  position:absolute;
+  width:100%;
+  height:30px;
+  border-top:1px solid #34495e;
+  bottom:0;
+  display:none;
+}
+footer h1{
+  font-family: 'Oswald', sans-serif;
+  font-weight:normal;
+  font-size:14px;
+  color:#34495e;
+  text-align:left;
+  margin-left:5%;
+}
+footer a{
+  font-family: 'Oswald', sans-serif;
+  font-weight:normal;
+  font-size:14px;
+  color:#34495e;
+}
+</style>
+<!-- Load d3.js -->
+<div id="container">
+  <h1>서울지역 자전거 교통사고 위치 분석 </h1>
+  <div class="button-1">
+    <div class="eff-1"></div>
+    <a href="7. 2월교통사고 발생량 지도.html"> 2월 교통사고 </a>
+  </div>
+  <div class="button-4">
+    <div class="eff-4"></div>
+    <a href="8. 10월 교통사고 발생량 지도.html"> 10월 교통사고 </a>
+  </div>
+  <div class="button-2">
+    <div class="eff-2"></div>
+    <a href="9. 자전거대여소 및 자전거 관련 사망사고 지도.html"> 자전거 교통사고 </a>
+  </div>
   <body>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+    <h2>사고위치 /  자전거대여소위치</h2>
+
     <div id="chart"></div>
-    <div id="title">
-        <h2>서울시내 자전거 관련 사고위치</h2>
-        <p>사고위치 /  자전거대여소위치</p>
-    </div>
     <script src="https://d3js.org/d3.v3.min.js"></script>
     <script src="https://d3js.org/topojson.v1.min.js"></script>
     <script>
@@ -70,7 +452,7 @@
 
     var path = d3.geo.path().projection(projection);
 
-    d3.json("http://15011066.iptime.org:5000/9", function(error, data) {
+    d3.json("./data/seoul_municipalities_topo_simple.json", function(error, data) {
       var features = topojson.feature(data, data.objects.seoul_municipalities_geo).features;
       map.selectAll('path')
           .data(features)
@@ -88,7 +470,7 @@
     });
 
 
-    d3.csv("http://15011066.iptime.org:5000/10", function(data1) {
+    d3.csv("./data/따릉이대여소정보.csv", function(data1) {
         places.selectAll("circle")
             .data(data1)
           .enter().append("circle")
@@ -98,7 +480,7 @@
 
     });
 
-    d3.csv("http://15011066.iptime.org:5000/11", function(data) {
+    d3.csv("./data/자전거관련사고.csv", function(data) {
         accident.selectAll("circle")
             .data(data)
           .enter().append("circle")
@@ -110,21 +492,21 @@
 
     d3.select("body")
         .append("svg")
-        .attr("width",50)
-        .attr("height",50)
+        .attr("width",120)
+        .attr("height",100)
         .append("circle")
-        .attr("cx",25)
-        .attr("cy",25)
+        .attr("cx",50)
+        .attr("cy",30)
         .attr("r",25)
         .style("fill","red");
 
         d3.select("body")
             .append("svg")
-            .attr("width",150)
-            .attr("height",50)
+            .attr("width",120)
+            .attr("height",100)
             .append("circle")
-            .attr("cx",65)
-            .attr("cy",25)
+            .attr("cx",80)
+            .attr("cy",30)
             .attr("r",25)
     </script>
   </body>
