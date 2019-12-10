@@ -228,7 +228,43 @@
   .button-5:hover a{
     color:#fff;
   }
-
+  .button-8{
+    width:350px;
+    height:50px;
+    border:2px solid #34495e;
+    float:left;
+    text-align:center;
+    cursor:pointer;
+    position:relative;
+    box-sizing:border-box;
+    overflow:hidden;
+    margin:0 0 40px 50px;
+  }
+  .button-8 a{
+    font-family:arial;
+    font-size:16px;
+    color:#fff;
+    text-decoration:none;
+    line-height:50px;
+    transition:all .5s ease;
+    z-index:2;
+    position:relative;
+  }
+  .eff-8{
+    width:350px;
+    height:50px;
+    border:70px solid #34495e;
+    position:absolute;
+    transition:all .5s ease;
+    z-index:1;
+    box-sizing:border-box;
+  }
+  .button-8:hover .eff-8{
+    border:0px solid #34495e;
+  }
+  .button-8:hover a{
+    color:#34495e;
+  }
 
 
   h1{
@@ -307,7 +343,7 @@
 </head>
 <body>
 <div id="container">
-  <h1>차량과 사람간의 사고에 대한 분석 </h1>
+  <h1>차량과 사람간의 사고 시 무단횡단에 대한 분석 </h1>
   <div class="button-1">
     <div class="eff-1"></div>
     <a href="./차량과 사람간의 사고 시 무단횡단에 대한 분석.html"> 차와 사람과의 사고에 대한 사고유형 분류 </a>
@@ -328,6 +364,10 @@
     <div class="eff-5"></div>
     <a href="./안전운전 불이행 중 주야 비율.html"> 안전운전 불이행 중 주야 비율 </a>
   </div>
+  <div class="button-8">
+   <div class="eff-8"></div>
+   <a href="./main.html"> Main </a>
+ </div>
   <svg id="myGraph">
   </svg>
   <script src="Carvshuman.js" charset="utf-8"></script>
